@@ -1,20 +1,33 @@
 import  { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import {LinkIcon, NavLinkIcon} from "../Generic";
+import { Theme } from "../Theme";
 
-function Navbar() {
+const NavList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+`;
+const NavListLi = styled.li`
+  padding: 12.5px 0;
+`;
+
+export default function Navbar() {
     return (
         <nav className="header__navbar-main">
-            <ul>
-                <li>
-                    <NavLink exact to="/">Activity</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/map">Map</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/timer">Time</NavLink>
-                </li>
-            </ul>
+            <NavList>
+                <NavListLi>
+                    <NavLinkIcon main="exact" icon="bar" title="Activity" url="/"></NavLinkIcon>
+                </NavListLi>
+                <NavListLi>
+                    <NavLinkIcon main="" icon="map" title="Map" url="/map"></NavLinkIcon>
+                </NavListLi>
+                <NavListLi>
+                    <NavLinkIcon main="" icon="time" title="Time" url="/timer"></NavLinkIcon>
+                </NavListLi>
+            </NavList>
         </nav>
     )
 }
-export default Navbar;

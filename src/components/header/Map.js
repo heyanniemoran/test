@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
+import { Theme } from "../Theme";
+import { Wrapper, Container, MainWrapper, Row, Col9, Col3, Dropdown } from "../Wrappers";
 
-class Map extends Component {
+export default class Map extends Component {
     render() {
         return (
-            <div>
-                map page
-            </div>
+            <MainWrapper>
+                <Container>
+                    map page
+                </Container>
+            </MainWrapper>
         );
     }
 }
-
-export default Map;

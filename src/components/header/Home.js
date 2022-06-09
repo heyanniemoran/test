@@ -1,13 +1,23 @@
 import React, {Component} from 'react';
+import { Theme } from "../Theme";
+import { Wrapper, Container, MainWrapper, Row, Col9, Col3, Dropdown } from "../Wrappers";
 
-class Home extends Component {
+export default class Home extends Component {
     render() {
         return (
-            <div>
-                home page
-            </div>
+            <MainWrapper>
+                <Container>
+                    <Row>
+                        <Col9>
+                            Какие-то записи
+                        </Col9>
+                        <Col3>
+                            фио
+                            навигация
+                        </Col3>
+                    </Row>
+                </Container>
+            </MainWrapper>
         );
     }
 }
-
-export default Home;

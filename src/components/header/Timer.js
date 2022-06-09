@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
+import { Theme } from "../Theme";
+import { Wrapper, Container, MainWrapper, Row, Col9, Col3, Dropdown } from "../Wrappers";
 
 class Timer extends Component {
     render() {
         return (
-            <div>
+            <MainWrapper>
+                <Container>
                 timer page
-            </div>
+                </Container>
+            </MainWrapper>
         );
     }
 }

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Theme } from "../Theme";
-import { Wrapper, Container, MainWrapper, Row, Col9, Col3, Dropdown } from "../Wrappers";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3, Dropdown } from "../Wrappers";
 
 export default class Home extends Component {
     render() {

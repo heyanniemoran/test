@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import styled, { css } from 'styled-components'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeaderContainer from './components/header/Header';
-import Home from './components/header/Home';
-import Map from './components/header/Map';
-import Timer from './components/header/Timer';
+import Home from './components/content/Home';
+import Map from './components/content/Map';
+import Timer from './components/content/Timer';
 import { Theme } from "./components/Theme";
 import { Wrapper, Container, MainWrapper, Row, Col9, Col3, Dropdown } from "./components/Wrappers";
 

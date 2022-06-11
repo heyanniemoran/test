@@ -3,6 +3,7 @@ import '../icomoon.css'
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 import { Theme } from "./Theme";
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const NavLinkStyled = styled(NavLink)`
   font-family: Roboto;
@@ -401,10 +402,19 @@ export class Profile extends React.Component {
     }
 }
 
-// export class BasicMap extends React.Component {
-//     render() {
-//         return (
-//             <div>map</div>
-//         )
-//     }
-// }
+export class BasicMap extends React.Component {
+     render() {
+         return (
+             <YMaps>
+                 <div>
+                     <Map width="100%" height="480px" defaultState={{
+                         center: [56.737224, 37.170292],
+                         zoom: 15
+                     }}>
+                         <Placemark geometry={[56.737224, 37.170292]} />
+                     </Map>
+                 </div>
+             </YMaps>
+         )
+     }
+}

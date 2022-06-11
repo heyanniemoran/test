@@ -6,7 +6,7 @@ import Timer from "../content/Timer";
 import {Icon, LinkIcon} from "../Generic";
 import styled from "styled-components";
 import { Theme } from "../Theme";
-import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3, Dropdown } from "../Wrappers";
+import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
 
 const Header = styled.header`
     background: ${Theme.colors.bg3};

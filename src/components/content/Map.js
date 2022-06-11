@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Theme } from "../Theme";
-import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3, Dropdown } from "../Wrappers";
+import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
 
 export default class Map extends Component {
     render() {

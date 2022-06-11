@@ -9,8 +9,8 @@ export const Theme = {
         grey: '#D3D8DE',
         bg: '#F1F1F1',
         white: '#FFFFFF',
-        b2: '#FAFAFA',
-        b2: '#F7F7F7',
+        bg2: '#FAFAFA',
+        bg3: '#F7F7F7',
         red: '#E33939',
         green: '#47B091'
     },

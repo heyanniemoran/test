@@ -14,13 +14,13 @@ export default function Home() {
                             closed={true}
                             title="Навыки"
                             time=""
-                            text=<Skills />
+                            text={<Skills />}
                         ></Tab>
                         <Tab
                             closed={true}
                             title=""
                             time="49 minutes ago"
-                            text=<Comments />
+                            text={<Comments />}
                         ></Tab>
                         <Tab
                             closed={false}
@@ -42,14 +42,14 @@ export default function Home() {
                             title="Navigation"
                             time=""
                             type="bordered"
-                            text=<Navigation />
+                            text={<Navigation />}
                         ></Tab>
                         <Tab
                             closed={true}
                             title="Share your thoughts"
                             time=""
                             type="bordered"
-                            text=<Form />
+                            text={<Form />}
                         ></Tab>
                     </Col3>
                 </Row>

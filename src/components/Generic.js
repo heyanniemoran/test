@@ -400,3 +400,11 @@ export class Profile extends React.Component {
         )
     }
 }
+
+// export class BasicMap extends React.Component {
+//     render() {
+//         return (
+//             <div>map</div>
+//         )
+//     }
+// }

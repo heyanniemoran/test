@@ -6,7 +6,7 @@ import Home from './components/content/Home';
 import Map from './components/content/Map';
 import Timer from './components/content/Timer';
 import { Theme } from "./components/Theme";
-import { Wrapper, Container, MainWrapper, Row, Col9, Col3, Dropdown } from "./components/Wrappers";
+import { Wrapper, Container, MainWrapper, Row, Col9, Col3 } from "./components/Wrappers";
 
 const Content = styled.main`
   background: ${Theme.colors.bg3};

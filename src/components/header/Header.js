@@ -8,6 +8,9 @@ import styled from "styled-components";
 import { Theme } from "../Theme";
 import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
 
+const StyledIcon = styled(Icon)`
+  // для работы вложенности
+`;
 const Header = styled.header`
     background: ${Theme.colors.bg3};
 `;
@@ -42,7 +45,7 @@ const TopHeaderLinkStyled = styled.a`
     &:hover {
         text-decoration: none;
     }
-    ${Icon} {
+    ${StyledIcon} {
       cursor: pointer;
     }
   &:hover ${TopHeaderTextStyled} {
@@ -56,7 +59,7 @@ const BottomHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: ${Theme.colors.bg2};
+    background: ${Theme.colors.bg3};
 `;
 const TopHeaderIcons = styled.div`
   display: flex;
@@ -65,25 +68,29 @@ const TopHeaderIcons = styled.div`
 const TopHeaderWrapper = styled.div`
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 8px 0 11px;
+  background: ${Theme.colors.white};
+  z-index: 1;
+  position: relative;
 `;
 const BottomHeaderWrapper = styled.div`
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
 `;
 const GoToUserPages = styled.a`
   display: flex;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: ${Theme.colors.black};
-  font-size: ${Theme.sizes.bigFont};
   &:hover {
     color: ${Theme.colors.blue};
   }
-  ${Icon} {
+  ${StyledIcon} {
     margin-right: 11px;
   }
 `;
 const GoToUserPagesLink = styled.p`
+  color: ${Theme.colors.black};
+  margin: 0;
 `;
 
 export default function HeaderContainer() {
@@ -93,20 +100,20 @@ export default function HeaderContainer() {
                 <Container>
                     <TopHeader>
                         <GoToUserPages href="#">
-                            <Icon icon="link_arrow"></Icon>
+                            <StyledIcon icon="link_arrow"></StyledIcon>
                             <GoToUserPagesLink><b>User-Pages</b> - Profile</GoToUserPagesLink>
                         </GoToUserPages>
                         <TopHeaderIcons>
                             <TopHeaderLinkStyled href="#">
-                                <Icon size="big" icon="statistics"></Icon>
+                                <StyledIcon size="big" icon="statistics"></StyledIcon>
                                 <TopHeaderTextStyled>Statistics</TopHeaderTextStyled>
                             </TopHeaderLinkStyled>
                             <TopHeaderLinkStyled href="#">
-                                <Icon size="big" icon="invoices"></Icon>
+                                <StyledIcon size="big" icon="invoices"></StyledIcon>
                                 <TopHeaderTextStyled>Invoices</TopHeaderTextStyled>
                             </TopHeaderLinkStyled>
                             <TopHeaderLinkStyled href="#">
-                                <Icon size="big" icon="schedule"></Icon>
+                                <StyledIcon size="big" icon="schedule"></StyledIcon>
                                 <TopHeaderTextStyled>Schedule</TopHeaderTextStyled>
                             </TopHeaderLinkStyled>
                         </TopHeaderIcons>

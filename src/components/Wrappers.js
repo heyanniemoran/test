@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   background: ${Theme.colors.bg2};
 `;
 
-export const MainWrapper = styled.main`
+export const MainWrapper = styled.div`
   padding: 32px 0;
   height: 100%;
   background: ${Theme.colors.bg};

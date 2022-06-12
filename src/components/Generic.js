@@ -3,7 +3,6 @@ import '../icomoon.css'
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 import { Theme } from "./Theme";
-import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const NavLinkStyled = styled(NavLink)`
   font-family: Roboto;
@@ -195,6 +194,30 @@ const ProfileSocials = styled.div`
 `;
 const ProfileSocial = styled.a`
     text-decoration: none;
+`;
+const LoaderStyled = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: ${Theme.colors.white};
+  z-index: 2;
+`;
+const LoaderWrapper = styled.div`
+position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+const LoaderImg = styled.img`
+  height: 125px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 export class Icon extends React.Component {
@@ -402,19 +425,14 @@ export class Profile extends React.Component {
     }
 }
 
-export class BasicMap extends React.Component {
-     render() {
-         return (
-             <YMaps>
-                 <div>
-                     <Map width="100%" height="480px" defaultState={{
-                         center: [56.737224, 37.170292],
-                         zoom: 15
-                     }}>
-                         <Placemark geometry={[56.737224, 37.170292]} />
-                     </Map>
-                 </div>
-             </YMaps>
-         )
-     }
+export class Loader extends React.Component {
+    render() {
+        return(
+            <LoaderStyled>
+                <LoaderWrapper>
+                    <LoaderImg src={require('../img/preloader.svg').default} alt=""/>
+                </LoaderWrapper>
+            </LoaderStyled>
+        )
+    }
 }

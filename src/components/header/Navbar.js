@@ -1,7 +1,5 @@
-import  { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import {LinkIcon, NavLinkIcon} from "../Generic";
-import { Theme } from "../Theme";
+import { NavLinkIcon } from "../Generic";
 
 const NavList = styled.ul`
   list-style: none;

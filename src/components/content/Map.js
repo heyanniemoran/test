@@ -1,7 +1,6 @@
-import React, {Component, UseState} from 'react';
-import { Theme } from "../Theme";
+import React, { Component } from 'react';
 import {Loader} from "../Generic";
-import Tab, { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
+import Tab, { Container, MainWrapper, Row, Col12 } from "../Wrappers";
 import { YMaps, Map as YMap, Placemark } from '@pbe/react-yandex-maps';
 import styled from "styled-components";
 

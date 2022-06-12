@@ -1,12 +1,8 @@
 import Navbar from "./Navbar";
-import {Route, Routes} from "react-router-dom";
-import Home from "../content/Home";
-import Map from "../content/Map";
-import Timer from "../content/Timer";
 import {Icon, LinkIcon} from "../Generic";
 import styled from "styled-components";
 import { Theme } from "../Theme";
-import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
+import { Container } from "../Wrappers";
 
 const StyledIcon = styled(Icon)`
   // для работы вложенности

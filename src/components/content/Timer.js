@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Tab, { Wrapper, Container, MainWrapper, Row, Col12} from "../Wrappers";
+import Tab, { Container, MainWrapper, Row, Col12} from "../Wrappers";
 
 class Timer extends Component {
     render() {

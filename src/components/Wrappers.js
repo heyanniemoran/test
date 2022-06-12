@@ -1,8 +1,8 @@
-import React, {Component, useEffect, useState} from 'react';
-import styled, { css } from 'styled-components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
 import { Theme } from "./Theme";
 import useCollapse from 'react-collapsed';
-import {Icon, LinkIcon} from "./Generic";
+import { Icon } from "./Generic";
 
 export const Wrapper = styled.div`
   background: ${Theme.colors.bg2};

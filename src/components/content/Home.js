@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
-import { Theme } from "../Theme";
-import styled from "styled-components";
-import {Icon, LinkIcon, Form, Navigation, Comments, Skills, Profile} from "../Generic";
-import Tab, { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
+import React from 'react';
+import {Form, Navigation, Comments, Skills, Profile} from "../Generic";
+import Tab, { Container, MainWrapper, Row, Col9, Col3 } from "../Wrappers";
 
 export default function Home() {
     return (

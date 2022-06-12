@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import { Theme } from "../Theme";
-import { Wrapper, Container, MainWrapper, Row, Col12, Col9, Col3 } from "../Wrappers";
+import Tab, { Wrapper, Container, MainWrapper, Row, Col12} from "../Wrappers";
 
 class Timer extends Component {
     render() {
@@ -9,7 +8,12 @@ class Timer extends Component {
                 <Container>
                     <Row>
                         <Col12>
-                            timer page
+                            <Tab
+                                closed={true}
+                                title="Timer"
+                                time=""
+                                text={secondsToTime(this.props.date)}
+                            ></Tab>
                         </Col12>
                     </Row>
                 </Container>
@@ -19,3 +23,7 @@ class Timer extends Component {
 }
 
 export default Timer;
+
+function secondsToTime(seconds) {
+    return new Date(seconds * 1000).toISOString().substr(11, 8);
+}

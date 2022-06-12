@@ -25,19 +25,25 @@ const TopHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     background: ${Theme.colors.white};
+  @media ${Theme.media.xs} {
+    flex-flow: column;
+  }
 `;
 const TopHeaderTextStyled = styled.span`
     color: ${Theme.colors.black};
     font-size: ${Theme.sizes.font};
   cursor: pointer;
-  margin-top: 11px
+  margin-top: 11px;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const TopHeaderLinkStyled = styled.a`
     display: flex;
     flex-flow: column;
     align-items: center;
     text-decoration: none;
-    margin-left: 32px;
+    margin-left: ${Theme.sizes.baseSize};
     &:hover {
         text-decoration: none;
     }
@@ -50,16 +56,25 @@ const TopHeaderLinkStyled = styled.a`
   &:first-child {
     margin-left: 0;
   }
+  @media ${Theme.media.lg} {
+    margin-left: ${Theme.lgSizes.baseSize};
+  }
 `;
 const BottomHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: ${Theme.colors.bg3};
+  @media ${Theme.media.xl} {
+    flex-wrap: wrap;
+  }
 `;
 const TopHeaderIcons = styled.div`
   display: flex;
   align-items: baseline;
+  @media ${Theme.media.xs} {
+    margin-top: ${Theme.lgSizes.baseSize};
+  }
 `;
 const TopHeaderWrapper = styled.div`
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);

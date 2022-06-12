@@ -17,6 +17,9 @@ const NavLinkStyled = styled(NavLink)`
     color: ${Theme.sizes.font};
     text-decoration: none;
   }
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 
 const Link = styled.a`
@@ -31,20 +34,32 @@ const Link = styled.a`
     color: ${Theme.sizes.font};
     text-decoration: none;
   }
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const IconStyled = styled.span`
   margin-right: 11px;
   font-size: ${Theme.sizes.icon};
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.icon};
+  }
 `;
 
 const IconMinStyled = styled.span`
   font-size: ${Theme.sizes.smallIcon};
   line-height: 14px;
   vertical-align: middle;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.smallIcon};
+  }
 `;
 
 const IconMaxStyled = styled.span`
   font-size: ${Theme.sizes.bigIcon};
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.bigIcon};
+  }
 `;
 
 const FormStyled = styled.form`
@@ -59,12 +74,14 @@ const Textarea = styled.textarea`
   border-radius: 4px;
   line-height: 1.3;
   font-family: Roboto;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const Submit = styled.input`
   width: 100%;
   background: ${Theme.colors.blue};
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px 0;
   font-weight: 500;
   color: ${Theme.colors.white};
   font-size: ${Theme.sizes.font};
@@ -72,8 +89,9 @@ const Submit = styled.input`
   border-radius: 4px;
   text-align: center;
   border: none;
-  padding-left: 0;
-  padding-right: 0;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const NavigationItems = styled.ul`
   list-style: none;
@@ -99,6 +117,9 @@ const GreyText = styled.span`
   color: ${Theme.colors.grey};
   font-size: ${Theme.sizes.font};
   padding-right: 16px;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const CircleText = styled.span`
   color: ${Theme.colors.white};
@@ -106,6 +127,9 @@ const CircleText = styled.span`
   padding: 1px 5px;
   border-radius: 8px;
   margin-right: 16px;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.smallFont};
+  }
 `;
 const CircleTextGreen = styled(CircleText)`
   background: ${Theme.colors.green};
@@ -133,12 +157,18 @@ const CommentText = styled.p`
   font-size: ${Theme.sizes.font};
   color: ${Theme.colors.black};
   margin: 0;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const CommentLink = styled.a`
   color: ${Theme.colors.blue};
   font-size: ${Theme.sizes.font};
   &:hover {
     color: ${Theme.colors.red};
+  }
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
   }
 `;
 const Comment = styled.div`
@@ -149,11 +179,17 @@ const CommentDesc = styled.p`
   color: ${Theme.colors.black};
   font-size: ${Theme.sizes.font};
   margin-bottom: 16px;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const CommentUser = styled.p`
   font-size: ${Theme.sizes.font};
   color: ${Theme.colors.second};
   margin-bottom: 0;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const CommentsIcons = styled.div`
   display: flex;
@@ -162,16 +198,28 @@ const CommentsIcon = styled.div`
   margin-right: 40px;
   font-size: ${Theme.sizes.font};
   color: ${Theme.colors.black};
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const ProfileWrapper = styled.section`
   background: ${Theme.colors.white};
   padding: 32px 50px 35px;
-  margin-bottom: 32px;
+  margin-bottom: ${Theme.sizes.baseSize};
+  text-align: center;
+  @media ${Theme.media.lg} {
+    padding: 22px 30px 25px;
+    margin-bottom: ${Theme.lgSizes.baseSize};
+  }
 `;
 const ProfilePhoto = styled.img`
-  width: 132px;
-  height: 132px;
+  width: ${Theme.sizes.photo};
+  height: ${Theme.sizes.photo};
   border-radius: 100%;
+  @media ${Theme.media.lg} {
+    width: ${Theme.lgSizes.photo};
+    height: ${Theme.lgSizes.photo};
+  }
 `;
 const ProfileName = styled.p`
   font-size: ${Theme.sizes.bigFont};
@@ -179,6 +227,9 @@ const ProfileName = styled.p`
   margin-bottom: 8px;
   text-align: center;
   margin-top: 16px;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.bigFont};
+  }
 `;
 const ProfileDesc = styled.p`
   font-size: ${Theme.sizes.font};
@@ -186,6 +237,9 @@ const ProfileDesc = styled.p`
   margin-bottom: 20px;
   text-align: center;
   margin-top: 0;
+  @media ${Theme.media.lg} {
+    font-size: ${Theme.lgSizes.font};
+  }
 `;
 const ProfileSocials = styled.div`
   display: flex;
@@ -211,13 +265,16 @@ position: relative;
 `;
 
 const LoaderImg = styled.img`
-  height: 125px;
+  height: ${Theme.sizes.loader};
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  @media ${Theme.media.lg} {
+    height: ${Theme.lgSizes.loader};
+  }
 `;
 
 export class Icon extends React.Component {

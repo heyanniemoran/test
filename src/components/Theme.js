@@ -33,9 +33,10 @@ export const Theme = {
         bigFont: '18px',
         smallFont: '12px',
         loader: '125px',
-        photo: '132px'
+        photo: '132px',
+        baseSize: '32px'
     },
-    mdSizes: {
+    lgSizes: {
         titleLink: '16px',
         navLink: '12px',
         icon: '12px',
@@ -46,6 +47,7 @@ export const Theme = {
         bigFont: '16px',
         smallFont: '10px',
         loader: '80px',
-        photo: '100px'
+        photo: '100px',
+        baseSize: '22px'
     }
 };

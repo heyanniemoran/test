@@ -103,6 +103,7 @@ const TabButton = styled.button`
   padding: 18px ${Theme.sizes.baseSize};
   font-family: Roboto;
   background: ${Theme.colors.white};
+  cursor: pointer;
   @media ${Theme.media.lg} {
     padding: 14px ${Theme.lgSizes.baseSize};
   }

@@ -9,7 +9,7 @@ const NavLinkStyled = styled(NavLink)`
   color: ${Theme.colors.black};
   font-size: ${Theme.sizes.font};
   padding: 12.5px 17.5px;
-  background: ${Theme.colors.bg2};
+  background: ${Theme.colors.bg3};
   text-decoration: none;
   &.active,
   &:hover {
@@ -27,7 +27,7 @@ const Link = styled.a`
   color: ${Theme.colors.black};
   font-size: ${Theme.sizes.font};
   padding: 12.5px 17.5px;
-  background: ${Theme.colors.bg2};
+  background: ${Theme.colors.bg3};
   text-decoration: none;
   &:hover {
     background: ${Theme.colors.bg};
@@ -333,6 +333,7 @@ export class NavLinkIcon extends React.Component {
 
 const LinkIconStyled = styled(LinkIcon)`
   padding: 0 16px;
+  background: ${Theme.colors.white};
   &:hover {
     background: ${Theme.colors.white};
     color: ${Theme.colors.blue};

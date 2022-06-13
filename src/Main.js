@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import HeaderContainer from './components/header/Header';
 import Home from './components/content/Home';
 import Map from './components/content/Map';
@@ -37,7 +37,7 @@ class Main extends Component {
     render() {
         return (
             <Wrapper>
-                <BrowserRouter basename="test/">
+                <HashRouter>
                     <HeaderContainer />
                     <Content>
                         <Routes>
@@ -46,7 +46,7 @@ class Main extends Component {
                             <Route path="/timer" element={<Timer date={this.state.date} />}/>
                         </Routes>
                     </Content>
-                </BrowserRouter>
+                </HashRouter>
             </Wrapper>
         );
     }

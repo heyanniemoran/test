@@ -37,7 +37,7 @@ class Main extends Component {
     render() {
         return (
             <Wrapper>
-                <BrowserRouter>
+                <BrowserRouter basename="test/">
                     <HeaderContainer />
                     <Content>
                         <Routes>

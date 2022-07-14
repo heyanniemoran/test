@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('assets/fonts/icomoon.eot?w1eirs');
+  src:  url('assets/fonts/icomoon.eot?w1eirs#iefix') format('embedded-opentype'),
+    url('assets/fonts/icomoon.ttf?w1eirs') format('truetype'),
+    url('assets/fonts/icomoon.woff?w1eirs') format('woff'),
+    url('assets/fonts/icomoon.svg?w1eirs#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e900";
+  color: #505050;
+}
+.icon-comments:before {
+  content: "\e901";
+  color: #505050;
+}
+.icon-connections:before {
+  content: "\e902";
+  color: #505050;
+}
+.icon-events:before {
+  content: "\e903";
+  color: #505050;
+}
+.icon-friends:before {
+  content: "\e904";
+  color: #505050;
+}
+.icon-hh .path1:before {
+  content: "\e905";
+  color: rgb(80, 80, 80);
+}
+.icon-hh .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-invoices:before {
+  content: "\e907";
+  color: #5095ec;
+}
+.icon-link_arrow:before {
+  content: "\e908";
+  color: #505050;
+}
+.icon-map:before {
+  content: "\e909";
+  color: #505050;
+}
+.icon-notes:before {
+  content: "\e90a";
+  color: #505050;
+}
+.icon-photos:before {
+  content: "\e90b";
+  color: #505050;
+}
+.icon-preloader:before {
+  content: "\e90c";
+  color: #505050;
+}
+.icon-profile:before {
+  content: "\e90d";
+  color: #505050;
+}
+.icon-schedule:before {
+  content: "\e90e";
+  color: #5095ec;
+}
+.icon-settings:before {
+  content: "\e90f";
+  color: #505050;
+}
+.icon-statistics:before {
+  content: "\e910";
+  color: #5095ec;
+}
+.icon-sync:before {
+  content: "\e911";
+  color: #505050;
+}
+.icon-telegram:before {
+  content: "\e912";
+  color: #505050;
+}
+.icon-time:before {
+  content: "\e913";
+  color: #505050;
+}
+.icon-twitter .path1:before {
+  content: "\e914";
+  color: rgb(80, 80, 80);
+}
+.icon-twitter .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-watch:before {
+  content: "\e916";
+  color: #505050;
+}
+.icon-balance:before {
+  content: "\e917";
+  color: #505050;
+}
+.icon-bar:before {
+  content: "\e918";
+  color: #505050;
+}
+.icon-chevron_down:before {
+  content: "\e919";
+  color: #8f8f8f;
+}
+.icon-chevron_up:before {
+  content: "\e91a";
+  color: #505050;
+}
